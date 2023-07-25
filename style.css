@@ -121,11 +121,19 @@ header {
   height: 100px;
 }
 
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 3em;
+  gap: 2em;
+ 
 }
 
 nav ul li {
@@ -396,20 +404,65 @@ nav ul li:hover {
 
 .containerPerguntas{
   padding: 2rem;
-}
 
-.pergunta{
- border-bottom: 1px solid #1c2539;
- padding: 1em;
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 20rem;
 }
 
 .titlePergunta{
   font-size: 1.7em;
+  font-weight: bold;
+
+  width: 90%;
 }
+
+.arrow{
+  transition: .5s;
+
+  width: 10%;
+  text-align: center;
+}
+
+
+
+.wrapperPergunta{
+  border-bottom: 1px solid #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.pergunta{ 
+  width: 100%;
+ padding: 1em;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.hiddenResposta{
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.3em;
+}
+
+.toggleHiddenResposta{
+  display: none;
+}
+
+
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.disrotated {
+  transform: rotate(0deg);
+}
+
+
 
 .services{
   background-color: #ffffff;
@@ -948,6 +1001,21 @@ footer {
     display: none;
   }
 
+
+  .titlePergunta{
+    font-size: 1.7em;
+    font-weight: bold;
+
+    width: 60%;
+  }
+  
+  .arrow{
+    transition: .5s;
+  
+    width: 40%;
+    text-align: center;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -1140,7 +1208,7 @@ footer {
   }
 
   .titleDuvidas{
-    background-color: red;
+    
     margin: auto;
     text-align: center;
     padding-bottom: 1em;
@@ -1148,12 +1216,13 @@ footer {
   }
 
   .containerPerguntas{
+    width: 100vw;
     padding: 2rem;
   }
   
   .pergunta{
-   border-bottom: 1px solid #1c2539;
-   font-size: .7em;
+
+   font-size: .8em;
    display: flex;
    padding-top: 1rem;
    justify-content: space-between;
