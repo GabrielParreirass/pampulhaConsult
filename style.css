@@ -1026,10 +1026,72 @@ footer {
     color: #111827;
     font-size: 1.5em;
   }
+
+    .quemSomos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .titleQuemSomos{
+    text-align: center;
+
+  }
+  
+  .containerTextosQuemSomos{
+    width: 90%;
+    color: #000000;
+  }
+  
+  .containerFotoLuiz{
+    width: 90%;
+    text-align: center;
+  }
+  
+  .containerFotoLuiz img{
+    width: 400px;
+    height: 400px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 700px) {
+
+  .titleQuemSomos{
+    text-align: center;
+
+  }
+
+  
+.quemSomos{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.containerTextosQuemSomos{
+  width: 90%;
+  color: #000000;
+}
+
+.containerFotoLuiz{
+  width: 90%;
+  text-align: center;
+}
+
+.containerFotoLuiz img{
+  width: 400px;
+  height: 400px;
+}
+  
   .hide {
     display: none;
   }
